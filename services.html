@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom & Bone Florals</title>
+    <link
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 14px;
+            margin: 5px 0 20px;
+        }
+
+        nav {
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            height: 80px;
+            width: auto;
+        }
+
+        .hero {
+            background-image: url('./image copy.png');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            background-image: url("https://cdn.sanity.io/images/ocl5w36p/production/15cdc7c2ae638167f997b84805fa20ccbca39a26-908x640.jpg?w=768&fm=webp&dpr=2");
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            background-color: #ECDFCE70;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            font-weight: normal;
+        }
+
+        .established {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #e8d3d1;
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .about {
+            background-color: #f9e6e6;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .shop-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .shop-item {
+            background-color: #7c9a92;
+            padding: 20px;
+            color: white;
+        }
+
+        .shop-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .social-section {
+            background-color: #f9e6e6;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .social-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        footer {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #22392C;
+            color: #ECDFCE;
+            padding: 20px 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-container>div {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #ECDFCE;
+            border-bottom: 1px solid #E9BE5F;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .footer-social-media .icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .footer-social-media .icons a:hover {
+            color: #E9BE5F;
+        }
+
+
+        .footer-contact-info a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-contact-info a:hover {
+            color: #fff;
+        }
+
+
+        .footer-quick-links p {
+            margin-bottom: 10px;
+        }
+
+        .footer-quick-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-quick-links a:hover {
+            color: #E9BE5F;
+        }
+
+        .footer-quick-links p a {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .footer-social-media .icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .footer-social-media .icons a:hover {
+            color: #E9BE5F;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footer-policies a {
+            color: #ccc;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .footer-policies a:hover {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-bottom {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>
+            AURA
+        </h1>
+        <p>
+            Go For Dine Today
+        </p>
+    </header>
+    <nav>
+        <a href="#">
+            About
+        </a>
+        <a href="gallery.html">
+            Gallery
+        </a>
+        <a href="menu.html">
+            Menu
+        </a>
+        <a href="reservation.html">
+            Bookings
+        </a>
+        <a href="contact.html">
+            Contact
+        </a>
+        <a href="#">
+            Services
+        </a>
+        <a href="#">
+            Login/Join
+        </a>
+    </nav>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <header>
+                <h1 style="font-size:100px;">
+                  AURA
+                </h1>
+                <p style="font-size: 30px;" class="">
+                  Go For Dine Today
+                </p>
+              </header><br>
+            <a href="reservation.html" class="btn">Book Now</a>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="about-content">
+            <p>
+                
+                Welcome to Aura
+                
+                At Aura, we invite you to immerse yourself in a dining experience that mirrors the opulent beauty of the Southeast. Our culinary creations, much like our floral art, are a testament to sustainability and breathtaking innovation. While you won’t find conventional dishes here, you will discover a menu crafted with exquisite care and inspired by nature’s splendor.
+                
+                Secure your table and allow us to captivate your senses with each thoughtfully prepared dish. Every visit promises not just a meal, but a memory that lingers in your heart.
+                
+                Reserve your experience today and indulge in the extraordinary.</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <h2>Rich legacy of Traditional Insight  </h2>
+        <div class="shop-grid">
+            <div class="shop-item">
+                <img src="https://cdn.sanity.io/images/ocl5w36p/production/eed7f4a6b63efe186903e788b022f43f2fdc31a9-908x640.jpg?w=768&fm=webp&dpr=2" alt="Events">
+                <h3>EVENTS</h3>
+                <p>At Aura, we understand that every event is a unique tapestry of moments, emotions, and experiences. Our luxurious venue, nestled in the heart of nature’s beauty, provides the perfect backdrop for your special occasions.</p>
+                <br>
+                <a href="#Explore" class="btn">Explore</a>
+            </div>
+            <div class="shop-item">
+                <img src="https://cdn.sanity.io/images/ocl5w36p/production/0c695d0dab17e369185722122c3e348b76edc1a0-908x1014.jpg?w=768&fm=webp&dpr=2" alt="Blogs">
+                <h3>Blogs</h3>
+                <p>At Aura, we believe that every moment deserves to be cherished. Our blog is your gateway to the latest trends, inspirations, and behind-the-scenes stories that make Aura a beacon of sophistication and elegance.</p>
+                <br>
+                <a href="#shop" class="btn">Blogs</a>
+            </div>
+            <div class="shop-item">
+                <img src="https://cdn.sanity.io/images/ocl5w36p/production/146f8bade9068f56fc0373c27ac4ba524f7e01dd-3632x2560.jpg?w=768&fm=webp&dpr=2" alt="Gathering">
+                <h3>WEDDINGS & EVENTS</h3>
+                <p>Elevate your corporate gatherings with Aura's unparalleled sophistication. Our state-of-the-art facilities and refined ambiance provide the perfect environment for productive meetings and inspiring conferences. </p>
+                <br>
+                <a href="#shop" class="btn">Gatherings</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <h2>LET'S BE FRIENDS - FOLLOW US</h2>
+        <div class="social-grid">
+            <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/6544443e4f0324dd53f5c04468198bec6f006c6c-1400x1120.png?w=768&fm=webp&dpr=2" alt="Social 1">
+            <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/3af8e12ebb290c16893a8312a6520dcf02b8c5d8-1400x1120.jpg?w=768&fm=webp&dpr=2" alt="Social 1">
+            <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/d451ef209272bc10c3665a819b4865034801d2a2-1400x1080.jpg?w=768&fm=webp&dpr=2" alt="Social 1">
+            <img src="https://cdn.sanity.io/images/ocl5w36p/prod2/7ac36dd73ffa00b4755d4805bf23020bd8464500-1400x1120.webp?w=768&fm=webp&dpr=2" alt="Social 1">
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact-info">
+                <h3>Contact</h3>
+                <p><strong>Phone:</strong>+91 22-6137-17XX</p>
+                <p><strong>Email:</strong> <a href="mailto:reservations@aura.com">reservations@aura.com</a></p>
+                <p><a href="mailto:contact@aura.com">Customer Support</a></p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h3>Quick Links</h3>
+                <p><a href="gallery2.html">Gallery</a></p>
+                <p><a href="menu.html">Dining</a></p>
+                <p><a href="BLOG.HTML">Wellness</a></p>
+                <p><a href="#">Event Venues</a></p>
+            </div>
+
+            <div class="footer-social-media">
+                <h3>Connect</h3>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Aura Restaurants. All Rights Reserved.</p>
+            <div class="footer-policies">
+                <a href="#">Terms</a> |
+                <a href="#">Privacy</a> |
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
