@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset and Box-Sizing */
+        footer {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #22392C; /* Dark Green */
+            color: #ECDFCE; /* Light Goldish Text */
+            padding: 20px 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-container > div {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #ECDFCE;
+            border-bottom: 1px solid #E9BE5F;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Info Section */
+        .footer-contact-info a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-contact-info a:hover {
+            color: #fff;
+        }
+
+        /* Quick Links Section */
+        .footer-quick-links p {
+            margin-bottom: 10px;
+        }
+
+        .footer-quick-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-quick-links a:hover {
+            color: #E9BE5F; /* Gold color on hover */
+        }
+
+        .footer-quick-links p a {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        /* Social Media Section */
+        .footer-social-media .icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .footer-social-media .icons a:hover {
+            color: #E9BE5F;
+        }
+
+        /* Footer Bottom Section */
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footer-policies a {
+            color: #ccc;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .footer-policies a:hover {
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-bottom {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact-info">
+                <h3>Contact</h3>
+                <p><strong>Phone:</strong> 1-800-111-825</p>
+                <p><strong>Email:</strong> <a href="mailto:reservations@aura.com">reservations@aura.com</a></p>
+                <p><a href="mailto:contact@aura.com">Customer Support</a></p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h3>Quick Links</h3>
+                <p><a href="#">Gallery</a></p>
+                <p><a href="#">Dining</a></p>
+                <p><a href="#">Wellness</a></p>
+                <p><a href="#">Event Venues</a></p>
+            </div>
+
+            <div class="footer-social-media">
+                <h3>Connect</h3>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Aura Restaurants. All Rights Reserved.</p>
+            <div class="footer-policies">
+                <a href="#">Terms</a> | 
+                <a href="#">Privacy</a> | 
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
